@@ -2,7 +2,7 @@
  * Created by sgundann on 1/28/2016.
  * This is an implementation to find item in circular sorted list.
  */
-import java.util.Arrays;
+
 public class FindItemInCircularSorted {
 
     private int[] input;
@@ -53,17 +53,5 @@ public class FindItemInCircularSorted {
         return s;
 
     }
-    public static void main(String[] args)
-    {
-        int[] input = {7,8,9,10,1,2,3,4,5};//{6,17,2,2,3};
-        int lo = 0;
-        int high = input.length -1;
-
-        FindItemInCircularSorted obj = new FindItemInCircularSorted(input);
-        System.out.println(obj.FindItem(17,lo,high));
-        System.out.println(obj.FindItem(3,lo,high));
-        System.out.println(obj.FindItem(1,lo,high));
-    }
-
 }
 

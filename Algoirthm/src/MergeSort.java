@@ -3,7 +3,6 @@
  * Created by sgundann on 2/29/2016.
  */
 public class MergeSort {
-    private Comparable[] aux;
 
     private static boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;
@@ -43,7 +42,7 @@ public class MergeSort {
     }
 
     public void SortMe(Comparable[] a) {
-        aux = new Comparable[a.length];
+        Comparable[] aux = new Comparable[a.length];
 
         Sort(a, aux, 0, a.length - 1);
 

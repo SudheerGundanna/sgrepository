@@ -1,10 +1,18 @@
 public class MainClass {
     public static void main(String[] args) {
-        Integer[] input = {7, 8, 9, 10, 1, 2, 3, 4, 5};//{6,17,2,2,3};//
+        Integer[] input = {1, 8, 9, 10, 7, 9, 3, 11, 5};//{6,17,2,2,3};//
         int lo = 0;
         int high = input.length - 1;
-        MergeSort ms = new MergeSort();
-        ms.SortMe(input);
+      /*  for(Comparable i : input)
+        {
+            System.out.print(i + " ");
+        }*/
+        // MergeSort ms = new MergeSort();
+        // ms.SortMe(input);
+
+
+        QuickSort qs = new QuickSort();
+        qs.sort(input, lo, high);
  /*
             FindItemInCircularSorted obj = new FindItemInCircularSorted(input);
             System.out.println(obj.FindItem(17,lo,high));
